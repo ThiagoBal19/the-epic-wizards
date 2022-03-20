@@ -1,0 +1,448 @@
+/*
+    Colors: #38b6ff
+            #5271ff
+            #004aad
+    Font: 'MedievalSharp', cursive
+          'El Messiri', sans-serif
+*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#38b6ff), color-stop(#5271ff), to(#004aad));
+  background-image: linear-gradient(#38b6ff, #5271ff, #004aad);
+}
+
+h1 {
+  font-family: 'MedievalSharp', cursive;
+}
+
+p {
+  font-family: 'El Messiri', sans-serif;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 5px 20px black;
+          box-shadow: 0 5px 20px black;
+  margin-bottom: 3rem;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  margin: 0rem 1rem;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8rem;
+}
+
+#info h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#info article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#info article .description {
+  width: 30rem;
+  text-align: left;
+}
+
+#info article .description p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#info article .description a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 3rem;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: auto;
+  background-color: white;
+}
+
+#info article .description a img {
+  width: 3rem;
+}
+
+#info article .image {
+  text-align: center;
+}
+
+#info article .image img {
+  width: 25rem;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+}
+
+#faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#faq h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#faq article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#faq article div {
+  width: 16rem;
+  margin: 1rem 2rem;
+}
+
+#faq article div .title {
+  font-size: 2rem;
+}
+
+#buy {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#buy h1 {
+  font-size: 4rem;
+}
+
+#buy article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+#buy article .buyDescription {
+  width: 25rem;
+  text-align: left;
+}
+
+#buy article .buyDescription p {
+  font-size: 1.4rem;
+}
+
+#buy article .buyImage img {
+  width: 25rem;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+}
+
+#buy article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: white;
+}
+
+#buy article a img {
+  margin-right: 0.5rem;
+  width: 3rem;
+}
+
+#roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#roadmap .roadmapTitle {
+  margin-bottom: 2rem;
+}
+
+#roadmap .roadmapTitle h1 {
+  font-size: 4rem;
+}
+
+#roadmap .dates {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  width: 30rem;
+  padding: 2rem 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#roadmap .dates p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#social .creator {
+  font-size: 4rem;
+}
+
+#social .thiagoNft {
+  width: 25rem;
+  -webkit-box-shadow: 10px 10px 15px black;
+          box-shadow: 10px 10px 15px black;
+}
+
+#social .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+#social .about .instagram {
+  margin-left: 5rem;
+}
+
+#social .about .instagram a {
+  text-decoration: none;
+  color: black;
+}
+
+#social .about .instagram a img {
+  width: 4rem;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 626px) {
+  #navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar ul li {
+    margin: 0rem 0.35rem;
+  }
+  #navbar ul li a {
+    font-size: 0.9rem;
+  }
+  #info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info h1 {
+    font-size: 3rem;
+  }
+  #info article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info article .description {
+    width: unset;
+  }
+  #info article .description p {
+    margin-left: 0.5rem;
+  }
+  #info article .description a {
+    margin-bottom: 1rem;
+  }
+  #info article .image img {
+    width: 95%;
+  }
+  #faq article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #faq article div {
+    width: unset;
+  }
+  #buy article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem 0.5rem;
+  }
+  #buy article .buyDescription {
+    width: unset;
+    margin-bottom: 2rem;
+  }
+  #buy article .buyImage img {
+    width: 95%;
+  }
+  #roadmap .roadmapTitle h1 {
+    font-size: 3rem;
+  }
+  #roadmap .dates {
+    width: 90%;
+    padding: 1rem 0.5rem;
+  }
+  #social .thiagoNft {
+    width: 90%;
+  }
+  #social .about .instagram {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 627px) and (max-width: 977px) {
+  #info article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info article .description {
+    width: unset;
+    padding: 0.5rem;
+    margin-right: 0.3rem;
+  }
+  #info article .description a {
+    margin-bottom: 2rem;
+  }
+  #faq article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #faq article div {
+    width: unset;
+  }
+  #buy article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #buy article .buyDescription {
+    width: unset;
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

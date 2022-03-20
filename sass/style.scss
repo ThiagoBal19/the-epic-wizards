@@ -1,0 +1,381 @@
+/*
+    Colors: #38b6ff
+            #5271ff
+            #004aad
+    Font: 'MedievalSharp', cursive
+          'El Messiri', sans-serif
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(#38b6ff, #5271ff, #004aad);
+}
+
+h1 {
+    font-family: 'MedievalSharp', cursive;
+}
+p {
+    font-family: 'El Messiri', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 5px 20px black;
+    margin-bottom: 3rem;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            margin: 0rem 1rem;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+    
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .description {
+            width: 30rem;
+            text-align: left;
+    
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                width: 3rem;
+                box-shadow: 5px 5px 5px black;
+                border-radius: 2rem;
+                padding: 1rem;
+                margin: auto;
+                background-color: white;
+    
+                img {
+                    width: 3rem;
+                }
+            }
+        }
+    
+        .image {
+            text-align: center;
+    
+            img {
+                width: 25rem;
+                box-shadow: 0 0 20px black;
+            }
+        }
+    }
+}
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        div {
+            width: 16rem;
+            margin: 1rem 2rem;
+            
+            .title {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+#buy {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 2rem;
+
+        .buyDescription {
+            width: 25rem;
+            text-align: left;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        .buyImage {
+            img {
+                width: 25rem;
+                box-shadow: 0 0 20px black;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            box-shadow: 5px 5px 5px black;
+            border: 1px solid black;
+            padding: 1rem;
+            background-color: white;
+
+            img {
+                margin-right: 0.5rem;
+                width: 3rem;
+            }
+        }
+    }
+}
+
+#roadmap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 8rem;
+
+    .roadmapTitle {
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .dates {
+        box-shadow: 0 0 10px black;
+        width: 30rem;
+        padding: 2rem 4rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+
+    .creator {
+        font-size: 4rem;
+    }
+
+    .thiagoNft {
+        width: 25rem;
+        box-shadow: 10px 10px 15px black;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-top: 2rem;
+
+        .instagram {
+            margin-left: 5rem;
+            
+            a {
+                text-decoration: none;
+                color: black;
+
+                img {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 626px) {
+    #navbar {
+        flex-direction: column;
+
+        ul {
+            li {
+                margin: 0rem 0.35rem;
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    #info {
+        flex-direction: column;
+        
+        h1 {
+            font-size: 3rem;
+        }
+        article {
+            flex-direction: column;
+
+            .description {
+                width: unset;
+    
+                p {
+                    margin-left: 0.5rem;
+                }
+                a {
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            .image {
+                img {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    #faq {
+        article {
+            flex-direction: column;
+
+            div {
+                width: unset;
+            }
+        }
+    }
+
+    #buy {
+        article {
+            flex-direction: column;
+            margin: 2rem 0.5rem;
+
+            .buyDescription {
+                width: unset;
+                margin-bottom: 2rem;
+            }
+            .buyImage {
+                img {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    #roadmap {
+        .roadmapTitle {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .dates {
+            width: 90%;
+            padding: 1rem 0.5rem;
+        }
+    }
+
+    #social {
+        .thiagoNft {
+            width: 90%;
+        }
+
+        .about {
+            .instagram {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 627px) and (max-width: 977px) {
+    #info {
+        article {
+            flex-direction: column;
+
+            .description {
+                width: unset;
+                padding: 0.5rem;
+                margin-right: 0.3rem;
+
+                a {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    #faq {
+        article {
+            flex-direction: column;
+
+            div {
+                width: unset;
+            }
+        }
+    }
+
+    #buy {
+        article {
+            flex-direction: column;
+
+            .buyDescription {
+                width: unset;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
